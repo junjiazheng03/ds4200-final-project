@@ -58,6 +58,13 @@ d3.csv("goal_distribution_by_team_and_phase_continent.csv").then(function(data) 
         .attr("transform", `translate(0,${height + margin.bottom / 2})`)
         .call(d3.axisBottom(xScale));
 
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", -margin.top / 2)
+        .attr("text-anchor", "middle")
+        .style("font-size", "24px")
+        .text("Goal Distribution by Match Phase and Team");
+
     const legend = svg.append("g")
         .attr("transform", `translate(${width + 40}, 10)`)
         .selectAll(".legend")

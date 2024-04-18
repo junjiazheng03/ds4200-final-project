@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+header h1, section h2, footer h2 {
+    color: #333;
+}
+
+.visualization img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    color: blue;
+    text-decoration: none;
+}

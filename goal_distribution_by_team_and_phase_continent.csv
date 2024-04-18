@@ -1,0 +1,79 @@
+team,Country,Continent,Match Phase,Goals
+Argentina,Argentina,South America,Early Game,1
+Argentina,Argentina,South America,Late Game,10
+Argentina,Argentina,South America,Mid-Game First Half,7
+Argentina,Argentina,South America,Mid-Game Second Half,5
+Australia,Australia,Oceania,Early Game,1
+Australia,Australia,Oceania,Mid-Game First Half,1
+Australia,Australia,Oceania,Mid-Game Second Half,1
+Belgium,Belgium,Europe,Mid-Game First Half,1
+Brazil,Brazil,South America,Early Game,2
+Brazil,Brazil,South America,Late Game,4
+Brazil,Brazil,South America,Mid-Game First Half,2
+Brazil,Brazil,South America,Mid-Game Second Half,2
+Cameroon,Cameroon,Africa,Late Game,1
+Cameroon,Cameroon,Africa,Mid-Game First Half,1
+Cameroon,Cameroon,Africa,Mid-Game Second Half,2
+Canada,Canada,North America,Early Game,1
+Costa Rica,Costa Rica,North America,Late Game,1
+Costa Rica,Costa Rica,North America,Mid-Game Second Half,1
+Croatia,Croatia,Europe,Early Game,1
+Croatia,Croatia,Europe,Late Game,9
+Croatia,Croatia,Europe,Mid-Game First Half,3
+Croatia,Croatia,Europe,Mid-Game Second Half,2
+Denmark,Denmark,Europe,Mid-Game Second Half,1
+Ecuador,Ecuador,South America,Early Game,1
+Ecuador,Ecuador,South America,Mid-Game First Half,1
+Ecuador,Ecuador,South America,Mid-Game Second Half,2
+France,France,Europe,Early Game,1
+France,France,Europe,Late Game,9
+France,France,Europe,Mid-Game First Half,4
+France,France,Europe,Mid-Game Second Half,4
+Germany,Germany,Europe,Early Game,1
+Germany,Germany,Europe,Late Game,3
+Germany,Germany,Europe,Mid-Game First Half,1
+Germany,Germany,Europe,Mid-Game Second Half,1
+Ghana,Ghana,Africa,Late Game,1
+Ghana,Ghana,Africa,Mid-Game First Half,2
+Ghana,Ghana,Africa,Mid-Game Second Half,2
+Iran,Iran,Asia,Late Game,3
+Iran,Iran,Asia,Mid-Game Second Half,1
+Japan,Japan,Asia,Late Game,2
+Japan,Japan,Asia,Mid-Game First Half,1
+Japan,Japan,Asia,Mid-Game Second Half,3
+Mexico,Mexico,North America,Mid-Game Second Half,2
+Morocco,Morocco,Africa,Early Game,2
+Morocco,Morocco,Africa,Late Game,4
+Morocco,Morocco,Africa,Mid-Game First Half,2
+Morocco,Morocco,Africa,Mid-Game Second Half,1
+Netherlands,Netherlands,Europe,Early Game,2
+Netherlands,Netherlands,Europe,Late Game,8
+Netherlands,Netherlands,Europe,Mid-Game First Half,2
+Netherlands,Netherlands,Europe,Mid-Game Second Half,1
+Poland,Poland,Europe,Late Game,2
+Poland,Poland,Europe,Mid-Game First Half,1
+Portugal,Portugal,Europe,Early Game,1
+Portugal,Portugal,Europe,Late Game,4
+Portugal,Portugal,Europe,Mid-Game First Half,2
+Portugal,Portugal,Europe,Mid-Game Second Half,5
+Qatar,Qatar,Asia,Late Game,1
+Saudi Arabia,Saudi Arabia,Asia,Late Game,1
+Saudi Arabia,Saudi Arabia,Asia,Mid-Game Second Half,2
+Senegal,Senegal,Africa,Late Game,1
+Senegal,Senegal,Africa,Mid-Game First Half,2
+Senegal,Senegal,Africa,Mid-Game Second Half,2
+Serbia,Serbia,Europe,Mid-Game First Half,3
+Serbia,Serbia,Europe,Mid-Game Second Half,2
+South Korea,South Korea,Asia,Late Game,1
+South Korea,South Korea,Asia,Mid-Game First Half,1
+South Korea,South Korea,Asia,Mid-Game Second Half,3
+Spain,Spain,Europe,Early Game,2
+Spain,Spain,Europe,Late Game,2
+Spain,Spain,Europe,Mid-Game First Half,2
+Spain,Spain,Europe,Mid-Game Second Half,3
+Switzerland,Switzerland,Europe,Mid-Game First Half,2
+Switzerland,Switzerland,Europe,Mid-Game Second Half,3
+Tunisia,Tunisia,Africa,Mid-Game Second Half,1
+United States,United States,North America,Mid-Game First Half,2
+United States,United States,North America,Mid-Game Second Half,1
+Uruguay,Uruguay,South America,Mid-Game First Half,2

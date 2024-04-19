@@ -1,4 +1,4 @@
-const margin = { top: 40, right: 120, bottom: 60, left: 60 },
+const margin = { top: 40, right: 240, bottom: 60, left: 60 },
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
@@ -26,6 +26,34 @@ d3.csv("goal_distribution_by_team_and_phase_continent.csv").then(function(data) 
     });
 
     sizeScale.domain([0, d3.max(data, d => d.Goals)]);
+
+    const sizeValues = [1, 10, 20, 30]; // Example goal counts
+
+    const sizeLegend = svg.append("g")
+        .attr("transform", `translate(${width + 100}, 100)`); // Position the legend
+
+    sizeLegend.append("text")
+        .attr("x", 0)
+        .attr("y", -30)
+        .text("Goals (size of bubbles)")
+        .style("font-weight", "bold")
+        .attr("text-anchor", "middle");
+
+    sizeValues.forEach((value, index) => {
+        sizeLegend.append("circle")
+            .attr("cx", 0)
+            .attr("cy", index * 40)
+            .attr("r", sizeScale(value))
+            .style("fill", "#ccc")
+            .style("opacity", 0.6);
+
+        sizeLegend.append("text")
+            .attr("x", 40 + sizeScale(sizeValues[sizeValues.length - 1])) // Align text to the right of the largest circle
+            .attr("y", index * 40)
+            .attr("dy", "0.35em")
+            .text(`${value} goals`)
+            .style("font-size", "12px");
+    });
 
     const simulation = d3.forceSimulation(data)
         .force("x", d3.forceX(d => xScale(d['Match Phase'])).strength(1))
@@ -57,7 +85,6 @@ d3.csv("goal_distribution_by_team_and_phase_continent.csv").then(function(data) 
     svg.append("g")
         .attr("transform", `translate(0,${height + margin.bottom / 2})`)
         .call(d3.axisBottom(xScale));
-
     svg.append("text")
         .attr("x", width / 2)
         .attr("y", -margin.top / 2)
@@ -66,7 +93,7 @@ d3.csv("goal_distribution_by_team_and_phase_continent.csv").then(function(data) 
         .text("Goal Distribution by Match Phase and Team");
 
     const legend = svg.append("g")
-        .attr("transform", `translate(${width + 40}, 10)`)
+        .attr("transform", `translate(${width + 100}, 300)`)
         .selectAll(".legend")
         .data(colorScale.domain())
         .enter().append("g")

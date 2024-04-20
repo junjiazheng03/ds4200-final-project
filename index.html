@@ -8,28 +8,55 @@
 </head>
 <body>
     <header>
-        <h1>Project Introduction</h1>
-        <p>Describe your project, the topic, and tasks here.</p>
+        <h1>Analyzing Goal Scoring Patterns in Professional Soccer</h1>
     </header>
+
+    <section id="project-introduction">
+        <h1>Project Introduction</h1>
+        <p>Our topic is Analyzing Goal Scoring Patterns in Professional Soccer. A detailed look at the locations, 
+           timing, and types of goal-scoring actions in professional soccer matches, identifying key patterns and strategies. 
+           To achieve this we set out some tasks that we hoped to accomplish by analyzing the data for example:
+           <li>Investigating where on the pitch and when during the match goals are most likely to be scored</li>
+           <li>Finding out what the most common goals scored were</li>
+           <li>Discovering where the most shots are being taken</li>
+           <li>Charting when goals are most likely to be scored and when teams are more effective in goal-scoring</li>
+        </p>
+    </section>
 
     <section id="data-overview">
         <h2>Data Visualization Overview</h2>
-        <p>Introduction about the dataset size, source, and attributes.</p>
-        <!-- Example of a static visualization -->
+        <p>We used data provided by Statsbomb that covers over 90 global football leagues
+            <li>Statsbomb is a football database renowned for its comprehensive football data</li><br>
+            The best thing about stats-bomb is that it collects data from every second of the match, such as,<br>
+            <li>Player position</li>
+            <li>Actions Occuring</li><br>
+            This allows for the data to be used to recreate the pitch in visualizations as well as to gain data on every single thing that occurs on the pitch relevant to football.<br>
+            We focused solely on data relevant to goal-scoring—like shot angles, distances, and player positions—while categorizing goals to delve into their nuanced characteristics.<br>
+            Since we focused on the World Cup, country/continent data was also relevant for us which we sourced from <a href="https://www.kaggle.com/datasets/hserdaraltan/countries-by-continent">
+            Kraggle</a>.   
+        </p>
+    </section>
+
+    <section id="static-visualizations">
+        <h2>Static Data Visualizations</h2>
         <div class="visualization">
             <h3>Top 10 Type Count Barchart</h3>
             <img src="Top_10_type_barchart.png" alt="Top Ten Types">
             <p>The bar blot above shows the counts of the top ten action types performed during the 2022 FIFA World Cup. We wanted to
                 give the viewer a fairly simple overview of the different types as well as how many were performed. We especially wanted to 
-                give present just how large the data set was. When comparing them, it is clear to see that the most common type was a pass.
-                This makes sense since players pass back and forth constantly. What is also interesting is that their were less receptions
-                than passes showing how player would sometimes miss the pass or it would be intercepted.
+                present just how large the data set was. When comparing them, it is clear to see that the most common type was a pass.
+                This makes sense since players pass back and forth constantly. What is also interesting is that there were fewer receptions
+                than passes showing how players would sometimes miss the pass or it would be intercepted.
             </p>
         </div>
-    </section>
-
-    <section id="static-visualizations">
-        <h2>Static Data Visualizations</h2>
+        <div class="visualization">
+            <h3>Shot Density Heat Map</h3>
+            <img src="Heat_map.png" alt="Shot Density Heat Map">
+            <p>This heat map displays the density of where shots were taken from during the 2022 FIFA World Cup. This was done by splitting the
+                pitch into 25 by 25-pixel squares and then counting the number of shots taken in that area. This count was then translated to a
+                color in the gradient. The map clearly shows that the majority of the shots taken were directly in front of the goal. This 
+                shows how the teams focused on a direct and centered attack strategy, opting to make big game moves in the center of the field.</p>
+        </div>
         <div class="visualization">
             <h3>Goal Distribution by Match Phase and Team</h3>
             <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -42,15 +69,6 @@
                 to identify geographical patterns in playing styles or strategies. This visualization not only serves as a 
                 tool for exploring how different teams perform throughout various stages of a match but also highlights
                 the influence of continental football cultures on team performance. </p>
-        </div>
-        <!-- Additional static visualizations go here -->
-        <div class="visualization">
-            <h3>Shot Density Heat Map</h3>
-            <img src="Heat_map.png" alt="Shot Density Heat Map">
-            <p>This heat map displays the density of where shots were taken from during the 2022 FIFA World Cup. This was done by spliting the
-                pitch into 25 by 25 pixel squares then counting the number of shots taken in that area. This count was then translated to a
-                color in the gradient. The map clearly shows that the majority of the shot taken where directly infront of the goal. This 
-                shows how the teams focused on a direct and centered attack strategy, opting to make big game moves in the center of the field.</p>
         </div>
     </section>
 
@@ -85,14 +103,23 @@
 
     <section id="summary-findings">
         <h2>Summary of Findings</h2>
-        <p>Discuss what you have learned from the data visualization and future work.</p>
+        <p>In conclusion, the data analyzed allowed for a few observations to be made from the patterns shown, such as:
+            <li> The majority of goals were scored from positions directly in front of the net, highlighting the importance of central attacking plays. </li>
+            <li>A significant number of goals occurred in the middle to later phases of matches, indicating teams' increasing offensive efforts or defensive fatigue as the game progresses. </li>
+            <li>When excluding penalty goals, the trend of scoring predominantly in the latter half of matches suggests a tactical shift or increased opportunities as matches unfold.</li>
+            <li>Including penalties, data shows a spike in goals towards the end of matches, underscoring the critical moments and high-pressure situations often present in the closing stages.</li>
+            <li>The analysis underscores the strategic value of both positioning and timing in goal-scoring opportunities, with penalties playing a pivotal role in match outcomes, especially in late-game scenarios.</li>
+            <br>
+            In the future, we will consider looking into what positions are most prominent in affecting goal scoring as well as what plays before lead to the most goals.  We will also look into how the opposition’s 
+            goal-scoring affects  a team’s goal-scoring.
+        </p>
     </section>
 
     <footer>
         <h2>References</h2>
         <ul>
-            <li><a href="https://doi.org/10.1007/978-3-658-21177-6">Reference One</a></li>
-            <li><a href="https://doi.org/10.1123/ijspp.2016-0644">Reference Two</a></li>
+            <li><a href="https://doi.org/10.1007/978-3-658-21177-6">Data Analytics in Professional Soccer</a></li>
+            <li><a href="https://doi.org/10.1123/ijspp.2016-0644">A Mine of Information: Can Sports Analytics Provide Wisdom From Your Data?</a></li>
         </ul>
     </footer>
 </body>
